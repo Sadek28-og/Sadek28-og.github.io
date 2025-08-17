@@ -1,4 +1,3 @@
-// Theme toggle + year + small utils
 (function(){
   const root = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');

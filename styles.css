@@ -70,7 +70,7 @@ a:hover{text-decoration:underline}
 .contact-form{display:grid;gap:12px;max-width:560px}
 .contact-form input,.contact-form textarea{background:transparent;border:1px solid var(--border);padding:10px;border-radius:10px;color:var(--text)}
 .contact-form button{justify-self:start}
-.socials{display:flex;gap:14px;margin-top:10px}
+.socials{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
 
 .site-footer{padding:18px 0;border-top:1px solid var(--border);margin-top:36px;color:var(--muted)}
 

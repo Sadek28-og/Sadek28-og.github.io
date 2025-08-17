@@ -1,31 +1,24 @@
-// Project data + rendering + filtering
+// Project data tailored to Sadek's domains
 const PROJECTS = [
   {
-    title: "Smart Billing Dashboard",
-    desc: "Automated invoicing and revenue analytics with Stripe, webhook-driven pipelines, and clean charts.",
+    title: "YouTube Thumbnail Pack",
+    desc: "High-CTR thumbnail set for a tech channel. Bold typography, clean subject cutouts, and consistent brand colors.",
     thumb: "assets/thumb1.svg",
-    stack: ["web", "Node.js", "Postgres"],
+    stack: ["design", "Photoshop", "Canva"],
     link: "#"
   },
   {
-    title: "Vision Classifier",
-    desc: "Lightweight CNN for edge devices, 92% accuracy on custom dataset with ONNX export.",
+    title: "Reels/Shorts Batch Edit",
+    desc: "15 short-form edits with auto-captions, beat sync, and fast cuts. Optimized for 9:16 and 1080x1920 export.",
     thumb: "assets/thumb2.svg",
-    stack: ["ml", "PyTorch", "ONNX"],
+    stack: ["video", "Premiere Pro"],
     link: "#"
   },
   {
-    title: "Portfolio Theme",
-    desc: "The template you're viewing—performant, accessible, and easy to customize.",
+    title: "Campaign Posters",
+    desc: "A series of social posters for a local brand. Template-driven, easy to localize and reuse.",
     thumb: "assets/thumb3.svg",
-    stack: ["web", "HTML", "CSS", "JS"],
-    link: "#"
-  },
-  {
-    title: "CLI Productivity",
-    desc: "A friendly CLI with plugins for note-taking, daily planning, and project scaffolding.",
-    thumb: "assets/thumb4.svg",
-    stack: ["other", "Go"],
+    stack: ["design", "Photoshop"],
     link: "#"
   }
 ];
