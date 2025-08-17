@@ -1,25 +1,27 @@
-// Project data tailored to Sadek's domains
+// Updated projects list for Sadek Hossain
+// Add/replace items as needed. Put your images in assets/ and update thumb paths.
+
 const PROJECTS = [
   {
-    title: "YouTube Thumbnail Pack",
-    desc: "High-CTR thumbnail set for a tech channel. Bold typography, clean subject cutouts, and consistent brand colors.",
-    thumb: "assets/thumb1.svg",
-    stack: ["design", "Photoshop", "Canva"],
-    link: "#"
+    title: "Tech Channel Thumbnails",
+    desc: "High-CTR YouTube thumbnails with bold text, clean cutouts, and brand colors.",
+    thumb: "assets/sadek-sample1.png",
+    stack: ["design", "Photoshop"],
+    link: "https://www.behance.net/sadekhossain101"
   },
   {
     title: "Reels/Shorts Batch Edit",
-    desc: "15 short-form edits with auto-captions, beat sync, and fast cuts. Optimized for 9:16 and 1080x1920 export.",
-    thumb: "assets/thumb2.svg",
+    desc: "Short-form edits with beat sync, captions, and export-ready formats (9:16).",
+    thumb: "assets/sadek-sample2.png",
     stack: ["video", "Premiere Pro"],
-    link: "#"
+    link: "https://youtube.com/@thesadekproductions"
   },
   {
     title: "Campaign Posters",
-    desc: "A series of social posters for a local brand. Template-driven, easy to localize and reuse.",
-    thumb: "assets/thumb3.svg",
+    desc: "Template-driven poster set for social media campaigns, easy to localize.",
+    thumb: "assets/sadek-sample3.png",
     stack: ["design", "Photoshop"],
-    link: "#"
+    link: "https://www.instagram.com/___sadek___"
   }
 ];
 
@@ -28,7 +30,7 @@ function renderProjects(list){
   if(!grid) return;
   grid.innerHTML = '';
   list.forEach(p => {
-    const tag = p.stack[0];
+    const tag = p.stack[0]; // first item as filter tag: 'design' or 'video'
     const el = document.createElement('article');
     el.className = 'card';
     el.setAttribute('data-tag', tag);
