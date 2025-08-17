@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — projects, skills, experience, and contact." />
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Projects, skills, and experience." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header container">
+  <a class="brand" href="#"><span class="logo">YN</span> <span class="brand-text">Your Name</span></a>
+  <nav class="nav">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle" aria-label="Toggle dark mode">☾</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="text-accent">Your Name</span>.</h1>
+      <p class="lead">I build fast, accessible, and human-friendly software. Currently exploring <strong>AI + automation</strong> and crafting clean UIs.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn-secondary" href="assets/Your_Name_CV.pdf" download>Download CV</a>
+      </div>
+      <ul class="quick-facts">
+        <li>📍 Based in: Your City</li>
+        <li>💼 Open to freelance/roles</li>
+        <li>✉️ <a href="#contact">Contact me</a></li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <img src="assets/portrait-placeholder.png" alt="Portrait of Your Name" />
+    </div>
+  </section>
+
+  <section id="projects" class="projects container">
+    <div class="section-head">
+      <h2>Selected Projects</h2>
+      <div class="filters" role="tablist">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="web" role="tab">Web</button>
+        <button class="chip" data-filter="ml" role="tab">ML</button>
+        <button class="chip" data-filter="other" role="tab">Other</button>
+      </div>
+    </div>
+    <div id="projectGrid" class="grid"></div>
+    <a class="btn btn-inline" href="projects.html">View all projects →</a>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About</h2>
+    <p>
+      I'm a developer/designer with a passion for building delightful digital products. I focus on performance,
+      accessibility, and clean architecture. I enjoy collaborating with cross-functional teams and shipping features
+      that users love.
+    </p>
+    <div class="split">
+      <div>
+        <h3>Skills</h3>
+        <ul class="tags">
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>SQL/NoSQL</li>
+          <li>Docker</li>
+          <li>CI/CD</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Experience</h3>
+        <ul class="timeline">
+          <li>
+            <span>2024–Present</span>
+            <div><strong>Role @ Company</strong><br />Shipped X to Y users, improved Z by 30%.</div>
+          </li>
+          <li>
+            <span>2022–2024</span>
+            <div><strong>Role @ Company</strong><br />Led A, reduced costs by B, mentored C.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <p>Want to collaborate or just say hi? Drop a message:</p>
+    <form action="https://formspree.io/f/{your_form_id}" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="socials">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <p>© <span id="year"></span> Your Name. Built with ❤️ and vanilla HTML/CSS/JS. <a href="sitemap.xml">Sitemap</a></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="projects.js"></script>
+</body>
+</html>
